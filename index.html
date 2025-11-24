@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTracker - Environmental Impact Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    .float-animation {
+      animation: float 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100">
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <svg class="h-8 w-8 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="text-xl font-bold text-gray-900">EcoTracker</span>
+          </div>
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="#" class="border-green-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              Dashboard
+            </a>
+            <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              Track
+            </a>
+            <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              Reports
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div class="px-4 py-6 sm:px-0">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+          Track Your <span class="text-green-600">Environmental Impact</span>
+        </h1>
+        <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+          Monitor, reduce, and offset your carbon footprint with intelligent tracking and personalized insights.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="flex-shrink-0 bg-green-100 rounded-lg p-3">
+              <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="ml-3 text-lg font-semibold text-gray-900">Carbon Tracking</h3>
+          </div>
+          <p class="text-gray-600">Automatically track your carbon emissions from daily activities including travel, energy usage, and consumption.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="flex-shrink-0 bg-blue-100 rounded-lg p-3">
+              <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="ml-3 text-lg font-semibold text-gray-900">Goal Setting</h3>
+          </div>
+          <p class="text-gray-600">Set personalized environmental goals and get actionable recommendations to reduce your ecological footprint.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="flex-shrink-0 bg-emerald-100 rounded-lg p-3">
+              <svg class="h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="ml-3 text-lg font-semibold text-gray-900">Impact Reports</h3>
+          </div>
+          <p class="text-gray-600">Generate detailed reports on your environmental impact and share your achievements with the community.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4 float-animation">
+            <svg class="h-8 w-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-2">Coming Soon</h2>
+          <p class="text-gray-600 mb-6">EcoTracker is currently in development. Join our waitlist to be notified when we launch!</p>
+          <div class="max-w-md mx-auto flex gap-2">
+            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+            <button class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+              Notify Me
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-600">2.5K</div>
+          <div class="text-sm text-gray-600">Trees Saved</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-600">10K</div>
+          <div class="text-sm text-gray-600">Tons CO₂ Reduced</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-emerald-600">50K</div>
+          <div class="text-sm text-gray-600">Active Users</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-teal-600">100</div>
+          <div class="text-sm text-gray-600">Partner Organizations</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
